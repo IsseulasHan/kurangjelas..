@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading...</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    h1 {
+      color: white;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Loading...</h1>
+
+  <script>
+    setTimeout(() => {
+      document.body.innerHTML = `
+        <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" 
+        style="width:100vw;height:100vh;object-fit:cover;">
+      `;
+      let audio = new Audio("https://www.myinstants.com/media/sounds/movie_1.mp3");
+      audio.play();
+    }, 3000);
+  </script>
+</body>
+</html>
